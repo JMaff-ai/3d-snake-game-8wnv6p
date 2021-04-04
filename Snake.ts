@@ -237,6 +237,10 @@ class food {
 interface CollidableHandler{
   applyAction: any;
 }
+interface SnakeFoodCollisionHandler{
+  applyAction: this.break: any;
+  main(eat,grow);
+}
 
 
 
