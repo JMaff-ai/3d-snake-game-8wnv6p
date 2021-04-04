@@ -10,13 +10,14 @@ newPoint: any;
 startposition: any;
 size: any;
 currentParts: number;
+break: any;
     
     public constructor() {
       this.currentParts == 0;
       this.currentDirection == 1;
       this.startposition == Point;
       this.size == Point;
-      for( let newPoint, thissize, 1);
+      for( let newPoint, thissize == 1;);
     }
     public turn() {
       this.currentDirection *= -1;
@@ -31,7 +32,6 @@ currentParts: number;
       this.currentParts == 0
     }
     
-    
     public get position() {
       return this.currentPosition;
     }
@@ -39,8 +39,19 @@ currentParts: number;
       return Snake;
     }
     public Collidable() {
-      
+      this.Date(this.move)
     }
+    private isCurrentlyActive(){
+      for(let isCurrentlyActive = true;)
+     this.break(isCurrentlyActive)
+    }
+    public get isActive(){
+      return this.isCurrentlyActive;
+    }
+    
+Date(move: any) {
+throw new Error("Method not implemented.");
+}
     }
     class Point {
 [x: string]: any;
