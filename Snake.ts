@@ -234,6 +234,9 @@ class food {
     return CaretPosition;
   }
 }
+interface CollidableHandler{
+  applyAction: any;
+}
 
 
 
