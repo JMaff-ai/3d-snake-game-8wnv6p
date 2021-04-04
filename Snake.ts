@@ -40,6 +40,8 @@ break: any;
     }
     public Collidable() {
       this.Date(this.move)
+      if(this.type != "snake") return true;
+      else return false;
     }
     private isCurrentlyActive(){
       for(let isCurrentlyActive = true;)
@@ -48,12 +50,15 @@ break: any;
     public get isActive(){
       return this.isCurrentlyActive;
     }
-    
+    public get type(){
+      return "snake";
+    }
 Date(move: any) {
 throw new Error("Method not implemented.");
 }
     }
     class Point {
+static grow: any;
 [x: string]: any;
       private xcoord: number;
       private ycoord: number;
@@ -213,7 +218,7 @@ requestAnimationFrame(run);
 interface Actor{
   addQuanity(arg0: Actor);
 }
-interface Collidable(arg0){
+interface Collidable({arg0}){
   this.didCollide(arg0)
 }
 class food {
@@ -221,6 +226,7 @@ class food {
     x = new Point; {
       let isCurrentlyActive = true;{
         let eat = false;
+        Point.grow(2,4);
       }
     }
   }
