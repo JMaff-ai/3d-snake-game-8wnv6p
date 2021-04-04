@@ -205,10 +205,13 @@ interface Collidable(arg0){
 class food {
   public constructor(x,y) {
     x = new Point; {
-      let isCurrentlyActive = true;
-      let eat = false;
+      let isCurrentlyActive = true;{
+        let eat = false;
+      }
     }
-  
+  }
+  public get position(){
+    return CaretPosition;
   }
 }
 
