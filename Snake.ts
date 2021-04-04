@@ -38,6 +38,9 @@ currentParts: number;
     public get direction() {
       return Snake;
     }
+    public Collidable() {
+      
+    }
     }
     class Point {
 [x: string]: any;
