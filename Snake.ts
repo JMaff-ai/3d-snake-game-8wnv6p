@@ -199,8 +199,17 @@ requestAnimationFrame(run);
 interface Actor{
   addQuanity(arg0: Actor);
 }
-interface Collidable(Actor){
-  this.didCollide(Actor)
+interface Collidable(arg0){
+  this.didCollide(arg0)
+}
+class food {
+  public constructor(x,y) {
+    x = new Point; {
+      let isCurrentlyActive = true;
+      let eat = false;
+    }
+  
+  }
 }
 
 
